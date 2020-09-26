@@ -1,0 +1,135 @@
+/* Global */
+
+:root {
+  /* Color */
+
+  --color-white: #ffffff;
+  --color-light-white: #f5f3f3;
+  --color-dark-white: #dbdbdb;
+  --color-green: #7bd188;
+  --color-brown: #858561;
+  --color-dark-grey: #4d4d4d;
+  --color-grey: #616161;
+  --color-light-grey: #7c7979;
+  --color-blur-grey: #5f5f5fb0;
+  --color-skyblue: #73aace;
+  --color-light-blue: #d6e3f5;
+  --color-blue: #4677fe;
+  --color-orange: #ffd000;
+  --color-black: #0f0f0f;
+  --color-light-black: #111111;
+  --color-blur-black: #202020d3;
+
+  /* Font size */
+
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+  --font-title: 5vw;
+
+  /* Font weight */
+
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radius: 4px;
+
+  /* Animation */
+  --animation-duration: 300ms;
+
+  /* Margin */
+  --margin--regular: 15px;
+}
+/*Universal tags*/
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Serif KR', serif;
+  color: var(--color-black);
+}
+
+body {
+  background-color: var(--color-green);
+}
+
+img {
+  width: 60%;
+  height: 60%;
+  margin: 35px auto;
+  margin-bottom: 0;
+}
+
+.blog {
+  width: 80%;
+  margin: 5vw auto;
+  background-color: var(--color-light-white);
+}
+
+.title {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title__main {
+  background-color: var(--color-green);
+  width: 90%;
+  height: 20vw;
+  margin: auto;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.title__main span {
+  color: var(--color-light-white);
+  font-size: var(--font-title);
+  margin-left: var(--margin--regular);
+}
+
+.title__menu {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  padding: 6px;
+  margin: auto;
+  background-color: var(--color-brown);
+}
+
+.menu {
+  cursor: pointer;
+  margin: 5px var(--margin--regular);
+  margin-left: 0px;
+  font-size: var(--font-regular);
+  transition: all var(--animation-duration) ease-in;
+}
+
+.menu:hover {
+  color: var(--color-light-white);
+}
+
+.menu__about {
+  margin-left: var(--margin--regular);
+}
+
+.body {
+  display: flex;
+}
+
+.body__description {
+  margin: 30px auto;
+  padding: 50px 0;
+  text-align: center;
+  background-color: var(--color-dark-white);
+  width: 90%;
+}
+
+.body__description p {
+  margin: var(--margin--regular);
+}
+
+.description.invisible {
+  display: none;
+}
