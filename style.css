@@ -7,6 +7,7 @@
   --color-light-white: #f5f3f3;
   --color-dark-white: #dbdbdb;
   --color-green: #7bd188;
+  --color-dark-green: #496353;
   --color-brown: #858561;
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
@@ -93,25 +94,22 @@ img {
   display: flex;
   flex-direction: row;
   width: 90%;
-  padding: 6px;
+  padding: 0;
   margin: auto;
   background-color: var(--color-brown);
 }
 
 .menu {
   cursor: pointer;
-  margin: 5px var(--margin--regular);
-  margin-left: 0px;
+  padding: 11px var(--margin--regular);
+  margin-left: 0;
   font-size: var(--font-regular);
   transition: all var(--animation-duration) ease-in;
 }
 
 .menu:hover {
   color: var(--color-light-white);
-}
-
-.menu__about {
-  margin-left: var(--margin--regular);
+  background-color: var(--color-dark-green);
 }
 
 .body {
@@ -132,4 +130,9 @@ img {
 
 .description.invisible {
   display: none;
+}
+
+.day3_2 {
+  width: 50%;
+  height: 50%;
 }
