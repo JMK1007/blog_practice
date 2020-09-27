@@ -136,3 +136,28 @@ img {
   width: 50%;
   height: 50%;
 }
+
+@media screen and (max-width: 768px) {
+  .blog {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  .title__main {
+    margin: 15px auto;
+    margin-bottom: 0;
+  }
+
+  .menu {
+    font-size: var(--font-micro);
+    padding: 5px 11px;
+  }
+
+  .body {
+    font-size: var(--font-micro);
+  }
+
+  .body__description {
+    margin: 15px auto;
+  }
+}
